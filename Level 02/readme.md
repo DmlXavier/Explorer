@@ -1,6 +1,8 @@
 # **Level 02 projects**
 These projects were given to me as assignments for this level.
 
+</br>
+
 ## Table of contents
 - [About](#about)
 - [Challenge 01](#challenge-01)
