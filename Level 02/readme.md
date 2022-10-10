@@ -1,7 +1,7 @@
 # **Level 02**
 These projects are a part of the course's second level.
 
-<br/>
+<br>
 
 ## Table of contents
 - [Technologies](#technologies)
