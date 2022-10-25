@@ -34,8 +34,8 @@ I was provided with three different webpage layouts and had to recreate them usi
 
 ## Projects
 These are the original projects used to follow the classes.<br>
-### [Project 01](./Project%2001/)
-### [Project 02](./Project%2002/)
+### [Project 01](./project-01/)
+### [Project 02](./project-02/)
 <br>
 
 ### [Return to the table of contents](#table-of-contents)
@@ -55,13 +55,13 @@ This assignment was made to practice introductory HTML and CSS concepts such as:
 - CSS cascade effect and specificity;
 - Basic CSS properties.
 
-### [Code](./Challenge%2001/)
+### [Code](./challenge-01/)
 
 ### Before
-![Before](./Challenge%2001/Layout/Challenge_01_before.png)
+![Before](./challenge-01/Layout/Challenge_01_before.png)
 
 ### After
-![After](./Challenge%2001/Layout/Challenge_01.png)
+![After](./challenge-01/Layout/Challenge_01.png)
 
 ### [Return to the table of contents](#table-of-contents)
 
@@ -83,14 +83,14 @@ These assignments were made to practice these concepts:
 - A few more CSS properties.
 
 ### Code
-[Challenge 02](./Challenge%2002/)<br/>
-[Challenge 03](./Challenge%2003/)
+[Challenge 02](./challenge-02/)<br/>
+[Challenge 03](./challenge-03/)
 
 ### Before
-![Before](./Challenge%2002/Layout/Challenge_02_before.png)
+![Before](./challenge-02/Layout/Challenge_02_before.png)
 
 ### After
-![After](./Challenge%2002/Layout/Challenge_02.png)
+![After](./challenge-02/Layout/Challenge_02.png)
 
 ### [Return to the table of contents](#table-of-contents)
 
@@ -102,10 +102,10 @@ This is the final assignment. In this one, i was given only the layout. I had to
 
 This assignment was made to practice everything i learned from the other challenges.
 
-### [Code](./Challenge%2004/)
+### [Code](./challenge-04/)
 
 ### Final result:
-![Final result](./Challenge%2004/Layout/Challenge_04.png)
+![Final result](./challenge-04/Layout/Challenge_04.png)
 
 ### [Return to the table of contents](#table-of-contents)
 

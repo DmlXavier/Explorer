@@ -6,6 +6,7 @@ These projects are a part of the course's third level.
 ## Table of contents
 - [Technologies](#technologies)
 - [About](#about)
+- [Projects](#projects)
 ---
 <br>
 
@@ -16,7 +17,7 @@ These projects are a part of the course's third level.
 <br>
 
 ## About
-In this level, we delved into HTML and CSS.<br>
+In this level, we delved deeper into HTML and CSS.<br>
 Using a "form" webpage layout as a base, we learned about:
 - How HTML forms work;
 - HTML fields and fieldsets;
@@ -32,8 +33,17 @@ Using a "form" webpage layout as a base, we learned about:
 <br/>
 
 ## Projects
+
+### Module 01
 This is the original project used to follow the classes.<br>
-### [Project 03](./Project%2003/)
+
+[Project 03](./project-03/)
+<br>
+
+These are the challenges made to exercise what we learned from project 03.
+
+[Challenge 01](./challenge-01/) <br>
+[Bonus challenge](./challenge-bonus/)
 <br>
 
 ### [Return to the table of contents](#table-of-contents)

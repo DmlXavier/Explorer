@@ -1,0 +1,188 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #E5E5E5;
+}
+
+body, input {
+	font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+	content: '';
+	height: 443px;
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	
+	background: #535971;
+}
+
+.page {
+	width: 750px;
+	margin: auto;
+}
+
+header {
+	width: 417px;
+	margin-top: 140px;
+
+	color: white;
+}
+
+h1, fieldset legend, h2, button {
+	font-family: 'Staatliches';
+}
+
+header h1 {
+	font-size: 48px;
+	font-weight: normal;
+	line-height: 60px;
+
+	margin-bottom: 18px;
+}
+
+header p {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+form {
+	min-height: 300px;
+	padding: 64px;
+	border-radius: 20px 20px 0 0;
+	margin-top: 58px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+
+	background: white;
+}
+
+fieldset {
+	border: none;
+}
+
+.fieldset-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+fieldset legend,  .date h2 {
+	color: #535971;
+}
+
+fieldset legend {
+	font-size: 24px;
+	line-height: 34px;
+
+	padding-bottom: 8px;
+	border-bottom: 1px solid #E6E6F0;
+	margin-bottom: 16px;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.input-wrapper label {
+	font-size: 14px;
+	line-height: 24px;
+	color: #4E4958;
+}
+
+.input-wrapper label span {
+	font-size: 12px;
+	line-height: 20px;
+	color: #C1BCCC;
+	
+	margin-left: 10px;
+}
+
+.input-wrapper label span:hover {
+	color: #6b6774;
+}
+
+.input-wrapper input {
+	width: 100%;
+	height: 56px;
+	border: 1px solid #E6E6F0;
+	border-radius: 8px;
+	padding: 0 24px;
+
+	font-size: 16px;
+	line-height: 26px;
+	color: #6c6a71;
+}
+
+.name-wrapper {
+	display: flex;
+	gap: 22px;
+}
+
+.name-wrapper > div:nth-child(1), .name-wrapper > div:nth-child(2) {
+	width: 100%;
+}
+
+.date {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.date h2 {
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 34px;
+}
+
+.date-wrapper {
+	display: flex;
+	gap: 32px;
+}
+
+.date-wrapper > div:nth-child(1) {
+	width: 100%;
+}
+
+footer {
+	height: 160px;
+	width: 100%;
+	padding: 56px 64px;
+	border-radius: 0 0 20px 20px;
+
+	background: #535971;
+}
+
+footer button {
+	width: 622px;
+	height: 56px;
+	border: none;
+	border-radius: 20px;
+	margin-bottom: 366px;
+
+	font-size: 20px;
+	line-height: 26px;
+	color: white;
+
+	background: #FF5374;
+}
+
+footer button:hover {
+	background: #ec385c;
+}
+
+input:invalid {
+	border: 1px solid red;
+}

@@ -1,4 +1,6 @@
 # Challenge 02
+This is a preview of the second challenge of level 02.
+
 ## Before
 ![Before](./Layout/Challenge_02_before.png)
 ## After
