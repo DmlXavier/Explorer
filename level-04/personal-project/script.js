@@ -123,7 +123,7 @@ while (option != 5) {
 					
 						const index = nameIndex(studentName, students)
 						
-						if ((index !== undefined) && (students[index].name.includes(studentName))) {
+						if (index !== undefined) {
 							students.splice(index, 1)
 							alert(`Confirmed. Student ${studentName} was removed from the registry.`)
 						}
@@ -176,7 +176,7 @@ while (option != 5) {
 
 				const index = nameIndex(studentName, students)
 				
-				if ((index !== undefined) && (students[index].name.includes(studentName))) {
+				if (index !== undefined) {
 					if (students[index].average >= 7) {
 						alert(`
 					Name: ${students[index].name}

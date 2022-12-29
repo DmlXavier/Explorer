@@ -28,7 +28,8 @@ This project used these technologies:
 This project is not a part of the Explorer course.<br>
 It's a combination of the [second challenge](../challenge-02/) and the [interactive menu](../exercises/option-menu/).<br>
 Here, i created an interactive menu of a school system.<br>
-The user can register or remove a student from the system, see a list of registered students and their report cards, they can even change their user name.
+The user can register or remove a student from the system, see a list of registered students and their report cards, they can even change their user name.<br>
+P.S.: Grades go from 0 to 10 and the passing score is 7. Lower than 3 results in an automatic fail.
 <br/>
 
 ## Demonstration
