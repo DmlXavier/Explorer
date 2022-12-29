@@ -59,3 +59,5 @@ These are the challenges made to exercise what we learned from project 04 and 05
 
 ---
 <br/>
+
+### Thank you for reading!<br>Diego
