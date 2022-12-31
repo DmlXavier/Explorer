@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fortune cookie</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Dancing+Script&family=Montserrat:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<main>
+		<div class="screen1">
+			<div class="title">
+				<h1>What's your fortune for today?</h1>
+	
+				<p>Open up the cookie and find out.</p>
+			</div>
+	
+			<div id="cookie">
+				<img src="./assets/fortune-cookie.svg" alt="Image of a fortune cookie">
+			</div>
+		</div>
+
+		<div class="screen2 hide">
+			<h1>Here's your fortune:</h1>
+
+			<p id="fortune">Message</p>
+
+			<img src="./assets/opened-cookie.svg" alt="Image of an opened fortune cookie.">
+			
+			<button id="resetBtn">Open another cookie</button>
+		</div>
+	</main>
+
+	<script src="./script.js"></script>
+</body>
+</html>
