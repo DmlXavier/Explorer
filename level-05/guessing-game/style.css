@@ -72,8 +72,6 @@ main {
 	margin-bottom: 1.6rem;
 	
 	font-family: 'Montserrat', sans-serif;
-
-	animation: fromTop 700ms 600ms backwards;
 }
 
 .title p, 
@@ -81,17 +79,11 @@ main {
 	color: hsla(238, 27%, 28%, 0.8);
 }
 
-.title p {
-	animation: fromTop 700ms 700ms backwards;
-}
-
 .guess {
 	display: flex;
 	justify-content: center;
 
 	margin-top: 4.8rem;
-
-	animation: popIn 550ms 700ms backwards;
 }
 
 .guess input, button {
@@ -141,17 +133,5 @@ main {
 
 	to {
 		opacity: 1;
-	}
-}
-
-@keyframes fromTop {
-	0% {
-		opacity: 0;
-		transform: translateY(-10px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
 	}
 }

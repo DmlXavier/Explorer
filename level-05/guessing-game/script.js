@@ -19,11 +19,11 @@ function guessClick (e) {
 	if ((guessNumber.value == '') || (isNaN(guessNumber.value))) {
 		subText.innerText = 'Please guess a number.'
 		return
-	} else if ((guessNumber.value < 0) || (guessNumber.value > 10)) {
+	}
+	else if ((guessNumber.value < 0) || (guessNumber.value > 10)) {
 		subText.innerText = 'Hint: The number is greater than 0 and lesser than 10.'
 	}
-
-	if (Number(guessNumber.value == randomNumber)) {
+	else if (Number(guessNumber.value == randomNumber)) {
 		switchScreen()
 
 		if (attempts == 1) {
@@ -34,17 +34,17 @@ function guessClick (e) {
 	}
 	else {
 		subText.innerText = 'Oops. You guessed wrong, try again.'
-		guessNumber.value = ''
 	}
-
+	
+	guessNumber.value = ''
 	attempts++
 }
 
+// Behaviour for the "play again button"
 function resetClick (e) {
 	randomNumber = Math.round(Math.random() * 10)
 
 	switchScreen()
-	guessNumber.value = ''
 
 	attempts = 1
 }
