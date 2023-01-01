@@ -25,6 +25,12 @@ This is what i saw:
 
 <br/>
 
+## Technologies
+This level used these technologies:
+- HTML;
+- JS;
+- Git.
+
 ## Projects
 
 ### Exercises
