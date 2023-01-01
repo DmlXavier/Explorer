@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+}
+
+body {
+	background: hsla(230, 78%, 8%, 1);
+}
+
+body, input, button {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+}
+
+h1 {
+	color:hsla(194, 68%, 15%, 1);
+}
+
+.container {
+	height: 100vh;
+
+	display: grid;
+	place-items: center;
+}
+
+.calculator {
+	max-width: 42.8rem;
+	padding: 4.8rem 6.4rem 6.4rem;
+	border-radius: .6rem;
+
+	background: white;
+	box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+}
+
+form {
+	display: grid;
+	gap: 1.6rem;
+}
+
+form h1 {
+	margin-bottom: 1.6rem;
+}
+
+
+.input-wrapper {
+	display: grid;
+	gap: .8rem;
+}
+
+label {
+	font-size: 1.4rem;
+	color: #00453A;
+}
+
+input {
+	border: .1rem solid rgba(73, 80, 87, 0.3);
+	
+	color: #212529;
+
+	background: hsla(212, 23%, 89%, 1);
+}
+
+input, button {
+	padding: 1.6rem;
+	border-radius: .4rem;
+}
+
+input:focus {
+	outline: 2px solid #02799D;
+}
+
+button {
+	border: none;
+	margin-top: 1.6rem;
+
+	display: flex;
+	justify-content: center;
+	gap: .8rem;
+
+	font-weight: 700;
+	color: white;
+
+	background: #02799D;
+	cursor: pointer;
+	transition: background .2s;
+}
+
+button:hover {
+	background: #014b61;
+}
