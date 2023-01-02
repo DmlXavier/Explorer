@@ -14,19 +14,23 @@
 	<script src="./script.js" defer></script>
 </head>
 <body>
+	<div class="alert">
+		Type numbers only.
+	</div>
+
 	<div class="container">
-			<main class="calculator">
+			<main class="card">
 				<form>
-				<h1>BMI calculator</h1>
+				<h1 class="title">BMI calculator</h1>
 				
 				<div class="input-wrapper">
 					<label for="weight">Weight(kg):</label>
-					<input id="weight" type="text">
+					<input id="weight" type="text" placeholder="65">
 				</div>
 
 				<div class="input-wrapper">
 					<label for="height">Height(cm):</label>
-					<input id="height" type="text">
+					<input id="height" type="text" placeholder="165">
 				</div>
 
 				<button>
@@ -35,6 +39,14 @@
 				</button>
 			</form>
 		</main>
+
+		<div class="result-wrapper">
+			<div class="result card">
+				<h2 class="title">Your BMI is</h2>
+
+				<button><img src="./assets/close.svg" alt="Close button"></button>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

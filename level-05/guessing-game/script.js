@@ -12,7 +12,7 @@ let attempts = 1
 // Functions
 // Prevents the page from refreshing and checks the input
 function guessClick (e) {
-	event.preventDefault()
+	e.preventDefault()
 
 	const guessNumber = document.querySelector('#guessNumber')
 

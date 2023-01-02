@@ -12,15 +12,16 @@ body {
 	background: hsla(230, 78%, 8%, 1);
 }
 
-body, input, button {
+body, input, form button {
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
 }
 
-h1 {
+.title {
 	color:hsla(194, 68%, 15%, 1);
 }
 
+/* Main menu */
 .container {
 	height: 100vh;
 
@@ -28,7 +29,7 @@ h1 {
 	place-items: center;
 }
 
-.calculator {
+.card {
 	max-width: 42.8rem;
 	padding: 4.8rem 6.4rem 6.4rem;
 	border-radius: .6rem;
@@ -65,7 +66,7 @@ input {
 	background: hsla(212, 23%, 89%, 1);
 }
 
-input, button {
+input, form button {
 	padding: 1.6rem;
 	border-radius: .4rem;
 }
@@ -74,7 +75,7 @@ input:focus {
 	outline: 2px solid #02799D;
 }
 
-button {
+form button {
 	border: none;
 	margin-top: 1.6rem;
 
@@ -90,6 +91,69 @@ button {
 	transition: background .2s;
 }
 
-button:hover {
+form button:hover {
 	background: #014b61;
+}
+
+/* Result window */
+.result-wrapper.open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.result-wrapper {
+	position: absolute;
+	inset: 0;
+
+	display: grid;
+	place-content: center;
+	opacity: 0;
+	visibility: hidden;
+
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.result {
+	position: relative;
+}
+
+.result button {
+	background: none;
+	border: none;
+
+	position: absolute;
+	top: 1.6rem;
+	right: 1.6rem;
+
+	cursor: pointer;
+	transition: transform .2s;
+}
+
+.result button:hover {
+	transform: scale(1.1);
+}
+
+/* Alert */
+.alert.open {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
+}
+
+.alert {
+	position: absolute;
+	right: 0;
+	left: 0;
+
+	text-align: center;
+	color: white;
+	font-weight: 700;
+
+	padding: .8rem 0;
+
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-30px);
+	transition: transform .5s;
+	background: hsla(0, 86%, 59%, 1);
 }
