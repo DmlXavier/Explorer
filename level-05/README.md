@@ -29,16 +29,24 @@ This level used these technologies:
 ### Module 01 
 Here, i learned about:
 - DOM and how to use it to manipulate HTML with JavaScript;
+- Events;
 - Callback functions.
 
-This was the project used to follow the classes:
-
+This was the project used to follow the classes:<br>
 [Guessing game](./guessing-game/)
+
+This was the challenge used to practice what i learned in this module:<br>
+[Fortune cookie](./fortune-cookie/)
+
 <br>
 
-This was the challenge used to practice what i learned in this module:
+### Module 02
+Here, i learned about:
+- ES6 modules (import and export);
+- Refactoring and clean code habits.
 
-[Fortune cookie](./fortune-cookie/)
+This was the project used to follow the classes:<br>
+[BMI calculator](./bmi/)
 
 ---
 <br>
