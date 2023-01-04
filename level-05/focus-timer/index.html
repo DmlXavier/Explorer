@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Timer for focusing on tasks.">
+	<title>FocusTimer</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+	<script src="./js/script.js" type="module" defer></script>
+</head>
+<body>
+	<main>
+		<h1 class="time">
+			<span id="minutes">00</span>
+			<span>:</span>
+			<span id="seconds">00</span>
+		</h1>
+
+		<div class="controls">
+			<button id="playBtn">
+				<img src="./assets/play-circle.svg">
+			</button>
+
+			<button class="hide" id="pauseBtn">
+				<img src="./assets/pause-circle.svg">
+			</button>
+
+			<button class="hide" id="stopBtn">
+				<img src="./assets/stop-circle.svg">
+			</button>
+
+			<button id="setBtn">
+				<img src="./assets/stopwatch.svg">
+			</button>
+		</div>
+	</main>
+
+	<footer>
+		<button class="hide" id="soundBtn">
+			<img src="./assets/volume-medium.svg">
+		</button>
+
+		<button id="muteBtn">
+			<img src="./assets/volume-mute.svg">
+		</button>
+	</footer>
+</body>
+</html>
