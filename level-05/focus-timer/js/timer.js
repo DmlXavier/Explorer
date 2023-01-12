@@ -1,43 +1,61 @@
-import { resetControls } from "./controls.js"
-import { minutes, seconds } from "./script.js"
+import Sound from "./sounds.js"
 
-export const Timer = {
-	minute: document.querySelector('#minutes'),
-	second: document.querySelector('#seconds')
-}
-export let timerTimeOut
+export default function Timer({resetControls, minuteDisplay, secondDisplay}) {
+	
+	let minutes = Number(minuteDisplay.textContent)
+	let seconds = Number(secondDisplay.textContent)
+	let timerTimeOut
+	
+	function reset() {
+		updateDisplay(minutes, seconds)
+		clearTimeout(timerTimeOut)
+	}
+	
+	function countDown(){
+    timerTimeOut = setTimeout(function() {
+      let seconds =  Number(secondDisplay.textContent)
+      let minutes = Number(minuteDisplay.textContent)
+			let finished = minutes <= 0 && seconds == 0
 
+      if (finished) {
+				Sound().timeUp()
+				reset()
+				resetControls()
+        return
+      }
 
-export function countDown() {
-	timerTimeOut = setTimeout(() => {
-		let seconds = Number(Timer.second.textContent)
-		let minutes = Number(Timer.minute.textContent)
+      if (seconds <= 0) {
+        seconds = 60
+        --minutes
+      }
 
-		updateTimerDisplay(minutes, 0)
-		
-		if (minutes <= 0 && seconds == 0) {
-			resetControls()
-			resetTimer()
-			return
-		}
+      updateDisplay(minutes, (seconds - 1))
 
-		if (seconds <= 0) {
-			seconds = 60
-			--minutes
-		}
-		
-		updateTimerDisplay(minutes, String(seconds - 1))
+      countDown()
+    }, 1000)
+  }
 
-		countDown()
-	}, 1000)
-}
+	function hold() {
+		clearTimeout(timerTimeOut)
+	}
+	
+	function updateDisplay(minutes, seconds) {
+		minuteDisplay.textContent = String(minutes).padStart(2, '0')
+		secondDisplay.textContent = String(seconds).padStart(2, '0')
+	}
 
-export function resetTimer() {
-	clearTimeout(timerTimeOut)
-	updateTimerDisplay(minutes, seconds)
-}
+	function updateMinutesAndSeconds(newMinutes, newSeconds) {
+		minutes = newMinutes
+		seconds = newSeconds
+	}
 
-export function updateTimerDisplay(minutes, seconds) {
-	Timer.minute.textContent = String(minutes).padStart(2, '0')
-	Timer.second.textContent = String(seconds).padStart(2, '0')
+	return {
+		countDown,
+		reset,
+		updateDisplay,
+		minutes,
+		seconds,
+		hold,
+		updateMinutesAndSeconds
+	}
 }

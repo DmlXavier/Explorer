@@ -48,6 +48,17 @@ Here, i learned about:
 This was the project used to follow the classes:<br>
 [BMI calculator](./bmi/)
 
+<br>
+
+### Module 03
+Here, i learned about:
+- Reviewed all i learned in previous modules;
+- Recursion;
+- Factory pattern.
+
+This was the project used to follow the classes:<br>
+[FocusTimer](./focus-timer/)
+
 ---
 <br>
 

@@ -1,19 +1,62 @@
-import { resetTimer } from "./timer.js"
+export default function Controls({playBtn, pauseBtn, stopBtn, setBtn, soundBtn, muteBtn}) {
+	function play() {
+		playBtn.classList.add('hide')
+		pauseBtn.classList.remove('hide')
+		setBtn.classList.add('hide')
+		stopBtn.classList.remove('hide')
+	}
 
-export const Buttons = {
-	play: document.querySelector('#playBtn'),
-	pause: document.querySelector('#pauseBtn'),
-	stop: document.querySelector('#stopBtn'),
-	set: document.querySelector('#setBtn'),
-	sound: document.querySelector('#soundBtn'),
-	mute: document.querySelector('#muteBtn')
-}
+	function pause() {
+		pauseBtn.classList.add('hide')
+		playBtn.classList.remove('hide')
+	}
 
-export function resetControls() {
-	Buttons.play.classList.remove('hide')
-	Buttons.pause.classList.add('hide')
-	Buttons.stop.classList.toggle('hide')
-	Buttons.set.classList.toggle('hide')
+	function setTime() {
+		let newMinutes = Number(prompt('How many minutes would you like to set the timer at?'))
+		let newSeconds = Number(prompt('How many seconds?'))
 
-	resetTimer()
+		if (!checkTime(newMinutes, newSeconds)) {
+			return false
+		}
+
+		return {newMinutes, newSeconds}
+	}
+	
+	function checkTime(minutes, seconds) {
+		let undefinedInput = minutes === undefined || seconds === undefined
+		let greaterThanSixty = minutes > 60 || seconds >= 60
+		let nan = isNaN(minutes) || isNaN(seconds)
+
+		if (undefinedInput || greaterThanSixty || nan) {
+				return false
+		}
+
+		return true
+	}
+
+	function sound() { 
+		soundBtn.classList.add('hide')
+		muteBtn.classList.remove('hide')
+	}
+
+	function mute() {
+		muteBtn.classList.add('hide')
+		soundBtn.classList.remove('hide')
+	}
+
+	function reset() {
+		playBtn.classList.remove('hide')
+		pauseBtn.classList.add('hide')
+		stopBtn.classList.toggle('hide')
+		setBtn.classList.toggle('hide')
+	}
+
+	return {
+		play, 
+		pause, 
+		setTime, 
+		sound, 
+		mute, 
+		reset
+	}
 }
