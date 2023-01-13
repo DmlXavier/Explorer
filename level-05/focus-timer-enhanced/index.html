@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Timer for focusing on tasks.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FocusTimer 2.0</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+	<link rel="shortcut icon" href="./assets/alarm-outline.svg" type="image/x-icon">
+
+	<script type="module" src="./js/script.js" defer></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+
+</head>
+<body>
+	<main>
+		<div class="timer">
+			<h1 id="time">
+				<span>00</span>
+				<span>:</span>
+				<span>00</span>
+			</h1>
+
+			<div class="controls">
+				<button id="playBtn">
+					<img src="./assets/play.svg">
+				</button>
+
+				<button id="pauseBtn" class="hide">
+					<img src="./assets/pause-circle-outline.svg">
+				</button>
+
+				<button id="stopBtn">
+					<img src="./assets/stop.svg">
+				</button>
+
+				<button id="plusBtn">
+					<img src="./assets/plus.svg">
+				</button>
+
+				<button id="minusBtn">
+					<img src="./assets/minus.svg">
+				</button>
+			</div>
+		</div>
+
+		<div class="sounds">
+			<button id="forest">
+				<img src="./assets/tree.svg">
+			</button>
+
+			<button id="rain">
+				<img src="./assets/rain.svg">
+			</button>
+
+			<button id="coffee-shop">
+				<img src="./assets/coffee.svg">
+			</button>
+
+			<button id="firepit">
+				<img src="./assets/fire.svg">
+			</button>
+		</div>
+	</main>
+</body>
+</html>

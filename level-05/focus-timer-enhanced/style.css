@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font-size: 62.5%;
+
+	--fc-default: hsl(240, 7%, 21%);
+	--bg-selected: hsla(194, 97%, 31%, 1);
+	--bgBtn-default: hsla(240, 9%, 89%, 1);
+}
+
+body {
+	min-height: 100vh;
+
+	display: grid;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	color: var(--fc-default);
+}
+
+.hide {
+	display: none;
+}
+
+.on {
+	background: var(--bg-selected);
+}
+
+button.on img {
+	filter: invert(94%) sepia(100%) saturate(24%) hue-rotate(59deg) brightness(104%) contrast(109%);
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	background: var(--bgBtn-default);
+	padding: 4.8rem;
+	border-radius: 2.4rem;
+
+	transition: transform .2s;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+
+main {
+	display: flex;
+	justify-self: center;
+	align-self: center;
+	
+	gap: 19.2rem;
+}
+
+.timer {
+	display: grid;
+	gap: 0;
+	align-items: center;
+}
+
+.timer #time {
+	margin-top: 5rem;
+	
+	display: flex;
+	gap: 0;
+	
+	font-size: clamp(6.4rem, 7rem + 10vh ,12.7rem);
+	font-weight: 500;
+}
+
+.timer .controls {
+	margin-bottom: 5rem;
+	
+	display: flex;
+	gap: 4rem;
+	justify-content: center;
+}
+
+.timer button {
+	background: none transparent;
+	padding: 0;
+	border-radius: 0;
+}
+
+.sounds {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"A B"
+	"C D";
+	gap: 3.2rem;
+}
