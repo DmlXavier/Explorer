@@ -58,13 +58,12 @@ main {
 
 .timer {
 	display: grid;
-	gap: 0;
-	align-items: center;
+	gap: 1rem;
+	padding: 6rem 0;
+	text-align: center;
 }
 
-.timer #time {
-	margin-top: 5rem;
-	
+.timer .time {
 	display: flex;
 	gap: 0;
 	
@@ -73,10 +72,8 @@ main {
 }
 
 .timer .controls {
-	margin-bottom: 5rem;
-	
 	display: flex;
-	gap: 4rem;
+	gap: 3rem;
 	justify-content: center;
 }
 

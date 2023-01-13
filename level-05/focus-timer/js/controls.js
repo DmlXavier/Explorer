@@ -24,10 +24,10 @@ export default function Controls({playBtn, pauseBtn, stopBtn, setBtn, soundBtn, 
 	
 	function checkTime(minutes, seconds) {
 		let undefinedInput = minutes === undefined || seconds === undefined
-		let greaterThanSixty = minutes > 60 || seconds >= 60
+		let greaterThan = minutes >= 100 || seconds >= 60
 		let nan = isNaN(minutes) || isNaN(seconds)
 
-		if (undefinedInput || greaterThanSixty || nan) {
+		if (undefinedInput || greaterThan || nan) {
 				return false
 		}
 

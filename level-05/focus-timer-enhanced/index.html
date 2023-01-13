@@ -22,49 +22,53 @@
 <body>
 	<main>
 		<div class="timer">
-			<h1 id="time">
-				<span>00</span>
+			<h1 class="time">
+				<span id="minutes">00</span>
 				<span>:</span>
-				<span>00</span>
+				<span id="seconds">00</span>
 			</h1>
 
 			<div class="controls">
 				<button id="playBtn">
-					<img src="./assets/play.svg">
+					<img src="./assets/play-circle-outline.svg">
 				</button>
 
 				<button id="pauseBtn" class="hide">
 					<img src="./assets/pause-circle-outline.svg">
 				</button>
 
-				<button id="stopBtn">
-					<img src="./assets/stop.svg">
+				<button id="stopBtn" class="hide">
+					<img src="./assets/stop-circle-outline.svg">
+				</button>
+
+				<button id="setBtn">
+					<img src="./assets/timer-outline.svg">
 				</button>
 
 				<button id="plusBtn">
-					<img src="./assets/plus.svg">
+					<img src="./assets/add-circle-outline.svg">
 				</button>
 
 				<button id="minusBtn">
-					<img src="./assets/minus.svg">
+					<img src="./assets/remove-circle-outline.svg">
 				</button>
 			</div>
 		</div>
 
 		<div class="sounds">
-			<button id="forest">
+			<button id="forestBtn">
 				<img src="./assets/tree.svg">
 			</button>
 
-			<button id="rain">
+			<button id="rainBtn">
 				<img src="./assets/rain.svg">
 			</button>
 
-			<button id="coffee-shop">
+			<button id="coffeeBtn">
 				<img src="./assets/coffee.svg">
 			</button>
 
-			<button id="firepit">
+			<button id="fireBtn">
 				<img src="./assets/fire.svg">
 			</button>
 		</div>
