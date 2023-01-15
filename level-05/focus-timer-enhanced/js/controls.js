@@ -43,13 +43,15 @@ export default function Controls({playBtn, pauseBtn, stopBtn, setBtn}) {
 		return false
 	}
 
-	function selectSound(btn) {
+	function selectSound(btn, sound) {
 		if (btn.classList.contains('on')) {
 			btn.classList.remove('on')
+			sound.pause()
 			return
 		}
 
 		btn.classList.add('on')
+		sound.play()
 	}
 
 	return {

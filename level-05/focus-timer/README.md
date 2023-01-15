@@ -7,7 +7,7 @@
 	<a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 
 <p align="center">
-  <img alt="fortune-cookie" src="./github/project.png"
+  <img alt="focus timer" src="./github/project.png"
 	width="100%">
 </p>
 <br/>

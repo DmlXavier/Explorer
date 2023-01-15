@@ -10,6 +10,7 @@
 	--fc-default: hsl(240, 7%, 21%);
 	--bg-selected: hsla(194, 97%, 31%, 1);
 	--bgBtn-default: hsla(240, 9%, 89%, 1);
+	--soundBtnImg: invert(94%) sepia(100%) saturate(24%) hue-rotate(59deg) brightness(104%) contrast(109%);
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 }
 
 button.on img {
-	filter: invert(94%) sepia(100%) saturate(24%) hue-rotate(59deg) brightness(104%) contrast(109%);
+	filter: var(--soundBtnImg);
 }
 
 button {
@@ -46,6 +47,10 @@ button {
 
 button:hover {
 	transform: scale(1.1);
+}
+
+button:active {
+	transform: scale(1);
 }
 
 main {
