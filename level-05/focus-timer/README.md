@@ -5,6 +5,7 @@
 <p align = center>
 	<a href="#technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 	<a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+	<a href="#demonstration">Demonstration</a>&nbsp;&nbsp;&nbsp;
 
 <p align="center">
   <img alt="focus timer" src="./github/project.png"

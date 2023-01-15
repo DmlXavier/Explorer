@@ -1,4 +1,4 @@
-<h1 align = center>FocusTimer</h1>
+<h1 align = center>FocusTimer 2.0</h1>
 
 <p align = center>This was the project used to practice all i learned from the third module of level 05.</p>
 
