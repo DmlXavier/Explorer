@@ -59,7 +59,7 @@ Here, i learned about:
 This was the project used to follow the classes:<br>
 [FocusTimer](./focus-timer/)
 
-This is the challenge used to practice what we learned from this module:
+This is the challenge used to practice what we learned from this module:<br>
 [FocusTimer 2.0](./focus-timer-enhanced/)
 
 ---
