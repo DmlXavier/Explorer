@@ -46,10 +46,20 @@ button.on svg path {
 	fill: white;
 }
 
-button.on + .slider,
-button.on + .slider input[type='range']::-webkit-slider-thumb,
-button.on + .slider input[type='range']::-moz-range-thumb {
+button.on + .slider {
 	background: white;
+}
+
+button.on + .slider input[type='range']::-moz-range-thumb {
+	background-color: white;
+}
+
+button.on + .slider input[type='range']::-webkit-slider-thumb {
+	background-color: white;
+}
+
+button.on + .slider input[type='range']::-ms-thumb {
+	background-color: white;
 }
 
 button {
@@ -181,6 +191,7 @@ main {
 
 .slider input[type='range'] {
 	-webkit-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
 	background: transparent;
 	cursor: pointer;
@@ -206,6 +217,13 @@ main {
 .slider input[type='range']::-moz-range-thumb {
 	border: none;
 
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	background: var(--fc-default);
+}
+
+.slider input[type='range']::-ms-thumb {
 	width: 1.6rem;
 	height: 1.6rem;
 	border-radius: 50%;
