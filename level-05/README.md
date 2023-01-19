@@ -62,6 +62,9 @@ This was the project used to follow the classes:<br>
 This is the challenge used to practice what we learned from this module:<br>
 [FocusTimer 2.0](./focus-timer-enhanced/)
 
+This is the second challenge from this module:<br>
+[FocusTimer 3.0](./focus-timer-darkmode/)
+
 ---
 <br>
 
