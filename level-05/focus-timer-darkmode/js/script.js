@@ -9,6 +9,7 @@ import {
 	lightBtn,
 	playBtn,
 	pauseBtn,
+	toggleDark,
 	stopBtn,
 	setBtn,
 	plusBtn,
@@ -45,11 +46,7 @@ const sounds = Sound()
 
 
 // Toggle dark/light mode
-lightBtn.addEventListener('click', () => {
-	controls.toggleDarkMode()
-})
-
-darkBtn.addEventListener('click', () => {
+toggleDark.addEventListener('click', () => {
 	controls.toggleDarkMode()
 })
 

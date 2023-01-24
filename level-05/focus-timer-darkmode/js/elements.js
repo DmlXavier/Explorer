@@ -3,6 +3,7 @@ const body = document.querySelector('body')
 const minutesDisplay = document.querySelector('#minutes')
 const secondsDisplay = document.querySelector('#seconds')
 
+const toggleDark = document.querySelector('.toggle-dark')
 const darkBtn = document.querySelector('#darkBtn')
 const lightBtn = document.querySelector('#lightBtn')
 
@@ -29,6 +30,7 @@ export {
 	secondsDisplay,
 	darkBtn,
 	lightBtn,
+	toggleDark,
 	playBtn,
 	pauseBtn,
 	stopBtn,
