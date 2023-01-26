@@ -8,7 +8,7 @@
 	<a href="#demonstration">Demonstration</a>&nbsp;&nbsp;&nbsp;
 
 <p align="center">
-  <img alt="focus timer 2.0" src="./github/project.png"
+  <img alt="focus timer 3.0" src="./github/project.png"
 	width="100%">
 </p>
 <br/>
