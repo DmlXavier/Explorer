@@ -35,7 +35,10 @@ Here, i learned about:
 - Introduction to Node.js.
 
 This was the project used to follow the classes:<br>
-[Spa](./spa/)
+[Spa](./spa/)<br>
+
+This was the challenge of this module:<br>
+[Spa](./spa-universe/)
 
 
 ---
