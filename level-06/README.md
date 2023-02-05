@@ -17,6 +17,7 @@ This level was a furthering of my study of JavaScript and an introduction to a f
 ## Technologies
 This level used these technologies:
 - HTML;
+- CSS;
 - JavaScript;
 - Node;
 - Git.
