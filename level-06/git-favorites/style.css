@@ -102,7 +102,7 @@ table th {
 	text-align: left;
 	font-weight: normal;
 	padding: 1.5rem;
-	background: var(--primary-color);
+	background-color: var(--primary-color);
 }
 
 table th:first-child {

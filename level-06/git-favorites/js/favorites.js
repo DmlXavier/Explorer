@@ -1,3 +1,6 @@
+import { GithubUser } from "./GithubUser.js"
+
+
 class Favorite {
 	constructor(root) {
 		this.root = document.querySelector(root)
@@ -9,12 +12,40 @@ class Favorite {
 		this.entries = JSON.parse(localStorage.getItem('@github-favorites:')) || []
 	}
 
+	save() {
+		localStorage.setItem('@github-favorites:', JSON.stringify(this.entries))
+	}
+
+	async add(username) {
+		try {
+			const userExists = this.entries.find(entry => entry.login === username)
+
+			if (userExists) {
+				throw new Error('User is already on the list.')
+			}
+
+			const user = await GithubUser.search(username)
+
+			if (user.login === undefined) {
+				throw new Error('User not found.')
+			}
+
+			this.entries = [user, ...this.entries]
+			this.update()
+			this.save()
+
+		} catch(error) {
+			alert(error.message)
+		}
+	}
+
 	delete(user) {
 		const filteredEntries = this.entries.filter(entry => entry.login !== user.login)
 		
 		this.entries = filteredEntries
 		
 		this.update()
+		this.save()
 	}
 }
 
@@ -26,6 +57,7 @@ export class FavoritesView extends Favorite {
 		this.tbody = this.root.querySelector('tbody')
 
 		this.update()
+		this.onAdd()
 	}
 
 	update() {
@@ -56,11 +88,21 @@ export class FavoritesView extends Favorite {
 		})
 	}
 
+	onAdd() {
+		const addBtn = this.root.querySelector('.search-box button')
+		
+		addBtn.onclick = () => {
+			const { value } = this.root.querySelector('.search-box input')
+
+			this.add(value)
+		}
+	}
+
 	removeAllTr() {
 		this.tbody.querySelectorAll('tr')
-			.forEach(tr => {
-				tr.remove()
-			})
+		.forEach(tr => {
+			tr.remove()
+		})
 	}
 
 	createRow() {
