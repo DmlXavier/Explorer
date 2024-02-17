@@ -1,5 +1,5 @@
-# Challenge 04
-This is a preview of the fourth challenge of level 02.
+# Challenge 03
+This is a preview of the third challenge of level 02.
 
-![Layout](./layout/Challenge_04.png)
+![Layout](../challenge-02/Layout/Challenge_02.png)
 ### [Return to main](../)

@@ -1,32 +1,29 @@
-/* Document properties */
 body {
   font-family: "Open Sans", sans-serif;
-  text-align: center;
-	margin: 0;
+  text-align: end;
+  margin: 0;
 }
 
-/* Main content properties */
 #hero {
     width: 592px;
-    margin: 0 auto 72px;
+    margin: 72px;
 }
 
-#hero img {
-    margin-bottom: 72px;
+img {
+    margin: 100px;
 }
 
-/* Text properties */
 h1 {
   font-family: "Inter", sans-serif;
   font-size: 49px;
   line-height: 56px;
   font-weight: normal;
-
-	margin-bottom: 32px;
 }
 
 h1 span {
   font-weight: bold;
+
+  margin-bottom: 32px;
 }
 
 span, a {
@@ -39,26 +36,21 @@ p, #footer {
   line-height: 28px;
 }
 
-/* Footer properties */
-#footer {
-	margin-bottom: 20px;
-}
-
 #footer a + a {
     margin-left: 28px;
 }
 
 .line {
-    width: 592px;
+    width: 568px;
     height: 0;
-    margin: 0 auto 8px;
+
+    margin: 0 8px;
 
     border: 1px solid #ECEFF2;
 }
 
-/* Asset properties */
 #balls {
     position: fixed;
-    bottom: 0;
+    top: 0;
     right: 0;
 }

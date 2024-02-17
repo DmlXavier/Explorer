@@ -1,98 +1,116 @@
 body {
-	margin: 0;
-	font-family: 'JetBrains Mono', monospace;
-	
-	background: #2C2B3D;
+  margin: 0;
 
-	min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+
+  background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+
+  min-height: 100vh;
 }
 
 .page {
-	width: 1092px;
-
-	color: white;
-
-	margin: 0 auto;
-	padding: 71px 0 23px
+  width: 1000px;
+  margin: 0 auto 30px;
+  padding-top: 65px;
 }
 
 nav {
-	width: 1083px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
+  margin-bottom: 55px;
 }
 
 ul {
-	font-size: 14px;
-	line-height: 28px;
-
-	list-style: none;
-
-	display: flex;
-	gap: 64px;
-
-	margin: 0;
-	padding: 0;
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-	text-decoration: none;
-	color: white;
+  color: #1f1534;
+  text-decoration: none;
 }
 
-a:hover {
-	font-size: 16px;
-	color: #00BFA6;
+ul li a {
+    opacity: 0.5;
+}
+
+ul li a:hover {
+  font-weight: bold;
+  opacity: 1;
+}
+
+ul, h1 {
+  font-family: "Mulish", sans-serif;
 }
 
 main {
-	display: flex;
-	align-items: center;
-	gap: 82px;
-
-	margin: 101px 0 157px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
-	margin-bottom: 59px;
+  font-size: 49px;
+  line-height: 56px;
+  color: #1f1534;
 
-	font-size: 36px;
-	line-height: 40px;
+  font-weight: normal;
+
+  width: 490px;
 }
 
-span {
-	font-weight: bold;
-	color: #00BFA6;
+h1 span {
+  color: #89c5cc;
+  font-weight: bold;
 }
 
 p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	line-height: 28px;
-	text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
 
-	color: #C2C2C2;
+  margin: 40px 0;
+}
+
+button {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+
+  background: #69B99D;
+  border: 0;
+  padding: 14px 32px 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
 }
 
 footer {
-	text-align: center;
-	font-size: 14px;
-	line-height: 28px;
+  font-size: 14px;
+  line-height: 28px;
+
+  text-align: center;
+
+  margin-top: 80px;
 }
 
-.line {
-	width: 568px;
-	height: 0;
-	border: 1px solid #00BFA6;
-
-	margin: 0 auto 27px;
+footer a {
+  font-weight: bold;
 }
 
-#padlock {
-	position: fixed;
-	left: 20px;
-	bottom: 20px;
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
 }
