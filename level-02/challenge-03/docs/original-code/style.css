@@ -1,32 +1,32 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
 body {
+    margin: 0;
+  
     font-family: "Open Sans", sans-serif;
   
-    background: linear-gradient(180deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
+    background: linear-gradient(90deg, rgb(227, 255, 248, 0) 82.08%, rgb(227, 255, 248, 0.38) 100%);
   
     min-height: 100vh;
   }
   
   .page {
-    width: 1000px;
+    width: 600px;
     margin: 0 auto;
     padding-top: 65px;
   }
   
   nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+  
+    margin-bottom: 15px;
   }
   
   ul {
     display: flex;
     list-style: none;
-		gap: 48px;
+    margin: 0;
+    padding: 0;
   }
   
   a {
@@ -35,11 +35,7 @@ body {
   }
   
   ul li a {
-			font-size: 18px;
-
-  	  opacity: 0.5;
-
-			transition: all .2s;
+      opacity: 0.5;
   }
   
   ul li a:hover {
@@ -51,20 +47,6 @@ body {
   ul {
     font-family: "Mulish", sans-serif;
   }
-
-	main {
-		display: flex;
-		align-items: center;
-		gap: 102px;
-
-		margin: 58px 0 80px;
-	}
-
-	main .text {
-		display: flex;
-		flex-direction: column;
-		gap: 40px;
-	}
   
   h1 {
     font-size: 49px;
@@ -72,6 +54,8 @@ body {
     color: #1f1534;
   
     font-weight: normal;
+  
+    width: 490px;
   }
   
   h1 span {
@@ -80,33 +64,28 @@ body {
   }
   
   section p {
-    color: #7d7987;
-  }
-
-	p, footer {
-		font-size: 14px;
+    font-size: 14px;
     line-height: 28px;
-	}
+    color: #7d7987;
+  
+    margin: 40px 0;
+  }
   
   button {
     color: white;
     font-family: "Open Sans", sans-serif;
-		text-transform: uppercase;
-		font-size: 16px;
   
     background: #69B99D;
     border: 0;
-		width: fit-content;
-    padding: 15px 32px;
+    padding: 0 50px 30px;
   
     display: flex;
-    gap: 10px;
-		align-items: center;
+    justify-content: space-around;
+    gap: 50px;
   
     border-radius: 4px;
   
     cursor: pointer;
-		transition: all .2s;
   }
   
   button:hover {
@@ -118,21 +97,16 @@ body {
     line-height: 28px;
   
     text-align: center;
+  
+    margin-top: 80px;
   }
   
   footer a {
     font-weight: bold;
-
-		transition: all .2s;
   }
-
-	footer a:hover {
-		color: #89c5cc;
-	}
   
   #balls {
-		position: fixed;
-    bottom: 0;
-    right: 0;
+      bottom: 0;
+      right: 0;
   }
   

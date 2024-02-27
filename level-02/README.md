@@ -84,10 +84,10 @@ This assignment was made to practice introductory HTML and CSS concepts such as:
 <br/>
 
 ## Challenges 03 and 04
-Like the first challenge, here i was given "broken" code and had to fix it in order to recreate the layout provided. Both 02 and 03 used the same layout as a model.
+Like the first challenge, here i was given "broken" code and had to fix it in order to recreate the layout provided. Both 03 and 04 used the same layout as a model.
 
-In the second challenge, like the first, i was given "broken" CSS and HTML code.<br> 
-In the third, i was given "correct" code but confusing and not acessibility-friendly HTML. I had to change it to have better readability and acessibility.
+In the third challenge, like the first, i was given "broken" CSS and HTML code.<br> 
+In the fourth, i was given "correct" code but confusing and not acessibility-friendly HTML. I had to change it to have better readability and acessibility.
 
 These assignments were made to practice these concepts:
 - Making understandable and acessible HTML:
@@ -98,8 +98,8 @@ These assignments were made to practice these concepts:
 - A few more CSS properties.
 
 ### Code
-[Challenge 02](./challenge-03/)<br/>
-[Challenge 03](./challenge-04/)
+[Challenge 03](./challenge-03/)<br/>
+[Challenge 04](./challenge-04/)
 
 ### [Return to the table of contents](#table-of-contents)
 

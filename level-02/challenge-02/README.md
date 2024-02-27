@@ -1,4 +1,5 @@
 # **Challenge 02**
+
 In this one, i was given only the layout. I had to recreate it by coding it from scratch.
 
 This assignment was made to practice introductory HTML and CSS concepts such as:

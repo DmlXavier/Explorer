@@ -1,96 +1,116 @@
-body {
-	margin: 0;
-	font-family: 'JetBrains Mono', monospace;
-	
-	background: #2C2B3D;
-
-	min-height: 100vh;
-}
-
-.page {
-	width: 1092px;
-
-	color: white;
-
-	margin: 0 auto;
-	padding: 71px 0 23px
-}
-
-nav {
-	width: 1083px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-}
-
-ul {
-	font-size: 14px;
-	line-height: 28px;
-
-	list-style: none;
-
-	display: flex;
-	gap: 64px;
-
+/* Document properties */
+* {
 	margin: 0;
 	padding: 0;
 }
 
+body {
+	min-height: 100vh;
+
+	font-family: "JetBrains Mono", monospace;
+	
+	background: hsl(243, 17%, 22%);
+}
+
+body, a {
+	color: hsl(0, 0%, 100%);
+}
+
+
+/* Page properties */
+.page {
+	padding: 71px 0 23px;
+	margin: 0 auto;
+	width: 1092px;
+}
+
 a {
 	text-decoration: none;
-	color: white;
+
+	transition: all .2s;
 }
 
 a:hover {
-	font-size: 16px;
-	color: #00BFA6;
-}
-
-main {
-	display: flex;
-	align-items: center;
-	gap: 82px;
-
-	margin: 101px 0 157px;
-}
-
-h1 {
-	margin-bottom: 59px;
-
-	font-size: 36px;
-	line-height: 40px;
-}
-
-span {
 	font-weight: bold;
-	color: #00BFA6;
+	color: hsl(172, 100%, 37%);
 }
 
-p {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
-	line-height: 28px;
-	text-align: center;
-
-	color: #C2C2C2;
-}
-
-footer {
-	text-align: center;
+.navMenu, footer {
 	font-size: 14px;
 	line-height: 28px;
 }
 
-.line {
+.navMenu, footer, #subtitle {
+	line-height: 28px;
+}
+
+span {
+	color: hsl(172, 100%, 37%);
+}
+
+
+/* Navigation menu properties */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .navMenu {
+	display: flex;
+	gap: 64px;
+
+	list-style: none;
+}
+
+
+/* Main section properties */
+main {
+	margin: 101px 0 157px;
+
+	display: flex;
+	align-items: center;
+	gap: 82px;
+}
+
+main .text {
+	display: flex;
+	flex-direction: column;
+	gap: 59px;
+
+	text-align: center;
+}
+
+main .text #title {
+	font-size: 36px;
+	line-height: 40px;
+}
+
+main .text #subtitle {
+	font-family: "Open Sans", sans-serif;
+	color: hsl(0, 0%, 76%);
+}
+
+
+/* Footer properties */
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+
+	text-align: center;
+}
+
+footer .line {
 	width: 568px;
 	height: 0;
 	border: 1px solid #00BFA6;
 
-	margin: 0 auto 27px;
+	margin: 0 auto;
 }
 
+
+/* Assets properties */
 #padlock {
 	position: fixed;
 	left: 20px;

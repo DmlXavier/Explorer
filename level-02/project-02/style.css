@@ -1,127 +1,138 @@
+/* Document properties */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    margin: 0;
-  
-    font-family: "Open Sans", sans-serif;
-  
-    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
-  
-    min-height: 100vh;
-  }
-  
-  .page {
-    width: 1000px;
-    margin: 0 auto;
-    padding: 65px 0 30px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	font-family: "Open Sans", sans-serif;
+	color: hsl(258, 42%, 14%);
 
-		margin-bottom: 55px;
-  }
-  
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 48px;
+	min-height: 100vh;
+	background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
 
-		margin: 0;
-		padding: 0;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  ul li a {
-		color: #1f1534;
-    opacity: 0.5;
-  }
-  
-  ul li a:hover {
-    font-weight: bold;
-    opacity: 1;
-  }
 
-  
-  h1, ul {
-		font-family: "Mulish", sans-serif;
-  }
-  
-	main {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+/* Page properties */
+.page {
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 65px;
+}
 
-  h1 {
-    font-size: 49px;
-    line-height: 56px;
-    color: #1f1534;
-  	font-weight: normal;
-  
-    width: 490px;
-  }
-  
-  h1 span {
-    color: #89c5cc;
-    font-weight: bold;
-  }
-  
-  section p {
-    font-size: 14px;
-    line-height: 28px;
-    color: #7d7987;
-  
-		width: 440px;
-    margin: 40px 0;
-  }
-  
-  button {
-    color: white;
-    font-family: "Open Sans", sans-serif;
-		text-transform: uppercase;
-  
-    background: #69B99D;
-    border: 0;
-    padding: 14px 32px 15px;
-  
-    display: flex;
-    justify-content: center;
-		align-items: center;
-    gap: 10px;
-  
-    border-radius: 4px;
-  
-    cursor: pointer;
-  }
-  
-  button:hover {
-      background: #4EA788;
-  }
-  
-  footer {
-    font-size: 14px;
-    line-height: 28px;
-  
-    text-align: center;
-  
-    margin-top: 82px;
-  }
-  
-  footer a {
-    color: black;
-  }
+nav ul li, #headerTxt {
+	font-family: "Mulish", sans-serif;
+}
 
-	footer a:hover {
-		font-size: 15px;
-	}
-  
-  #balls {
-			position: fixed;
-      bottom: 0;
-      right: 0;
-  }
-  
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+span, #instagramLink {
+	font-weight: bold;
+}
+
+span, #instagramLink:hover {
+	color: hsl(186, 40%, 67%);
+}
+
+#paragraph, footer {
+	font-size: 14px;
+	line-height: 28px;
+}
+
+
+/* Navigation menu properties */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	gap: 48px;
+
+	list-style: none;
+}
+
+nav ul li a {
+	font-size: 18px;
+	opacity: 0.5;
+
+	transition: all .2s;
+}
+
+nav ul li a:hover {
+	font-weight: bold;
+	opacity: 1;
+}
+
+
+/* Main properties */
+main {
+	margin: 58px 0 80px;
+
+	display: flex;
+	gap: 102px;
+	align-items: center;
+}
+
+main .text {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+main .text #headerTxt {
+	font-weight: normal;
+	font-size: 49px;
+	line-height: 56px;
+}
+
+main .text #paragraph {
+	color: #7D7987;
+}
+
+main .text #whatsappBtn {
+	border: none;
+	padding: 15px 32px;
+	width: fit-content;
+	border-radius: 4px;
+	background: hsl(159, 36%, 57%);
+
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	font-family: "DM Sans", sans-serif;
+	color: hsl(0, 0%, 100%);
+	font-size: 16px;
+	text-transform: uppercase;
+
+	cursor: pointer;
+	transition: all .2s;
+}
+
+main .text #whatsappBtn:hover {
+	background: hsl(158.8, 49.8%, 44.5%);
+}
+
+
+/* Footer properties */
+footer {
+	text-align: center;
+}
+
+footer #instagramLink {
+	transition: all .2s;
+}
+
+
+/* Assets properties */
+#balls {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
